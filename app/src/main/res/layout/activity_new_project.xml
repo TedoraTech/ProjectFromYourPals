@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewProjectActivity">
+
+    <include
+        android:id="@+id/NewProjectPage_toolBar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/NewProjectPage_toolBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/NewProjectPage_ProjectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Project Name"/>
+
+            <EditText
+                android:id="@+id/NewProjectPage_ProblemStatement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NewProjectPage_ProjectName"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Problem Statement"/>
+
+            <EditText
+                android:id="@+id/NewProjectPage_ProposedSolution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:layout_below="@id/NewProjectPage_ProblemStatement"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Proposed Solution"/>
+
+            <EditText
+                android:id="@+id/NewProjectPage_yos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="4"
+                android:layout_below="@id/NewProjectPage_ProposedSolution"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Year of Submission"/>
+
+            <EditText
+                android:id="@+id/NewProjectPage_References"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:layout_below="@id/NewProjectPage_yos"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="References"/>
+
+            <EditText
+                android:id="@+id/NewProjectPage_Mentor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_below="@id/NewProjectPage_References"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Mentor(if any)"/>
+
+            <TextView
+                android:id="@+id/NewProjectPage_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NewProjectPage_Mentor"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#000"
+                android:text="Select your branch"/>
+
+            <Button
+                android:id="@+id/NewProjectPage_EceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NewProjectPage_question"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/blue_border"
+                android:text="ECE"/>
+
+            <Button
+                android:id="@+id/NewProjectPage_CseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NewProjectPage_question"
+                android:layout_toEndOf="@id/NewProjectPage_EceButton"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/blue_border"
+                android:text="CSE"/>
+
+            <Button
+                android:id="@+id/NewProjectPage_MechButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/NewProjectPage_CseButton"
+                android:layout_below="@id/NewProjectPage_question"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/blue_border"
+                android:text="MECH"/>
+
+            <Button
+                android:id="@+id/NewProjectPage_UploadVideo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NewProjectPage_EceButton"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/blue_border"
+                android:text="Upload Video"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/NewProjectPage_UploadReport"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NewProjectPage_EceButton"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/blue_border"
+                android:text="Upload Report"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/NewProjectPage_submitProject"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NewProjectPage_UploadReport"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/blue_border"
+                android:textColor="#fff"
+                android:layout_centerHorizontal="true"
+                android:text="Submit"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

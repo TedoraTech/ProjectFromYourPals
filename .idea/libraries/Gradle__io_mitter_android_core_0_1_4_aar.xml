@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.mitter.android:core:0.1.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da9570e8352896ec472b7bd06157f504/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da9570e8352896ec472b7bd06157f504/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.mitter.android/core/0.1.4/c39190296ce927979d57fff257c32267f9c11d35/core-0.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

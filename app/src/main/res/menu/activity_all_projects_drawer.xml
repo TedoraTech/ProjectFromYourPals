@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Selections">
+        <menu>
+            <item
+                android:id="@+id/nav_queryForum"
+                android:icon="@drawable/ic_forum_black_24dp"
+                android:title="Query Forum"/>
+            <item
+                android:id="@+id/nav_allProjects"
+                android:icon="@drawable/ic_all_inclusive_black_24dp"
+                android:title="All projects" />
+            <item
+                android:id="@+id/nav_eceProjects"
+                android:icon="@drawable/ic_arrow_forward_black_24dp"
+                android:title="ECE projects" />
+            <item
+                android:id="@+id/nav_cseProjects"
+                android:icon="@drawable/ic_arrow_forward_black_24dp"
+                android:title="CSE projects" />
+            <item
+                android:id="@+id/nav_mechProjects"
+                android:icon="@drawable/ic_arrow_forward_black_24dp"
+                android:title="Mechanical projects" />
+        </menu>
+    </item>
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/MainMenu_buyItems"
+            android:title="Buy Items"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"/>
+
+        <item
+            android:id="@+id/MainMenu_favMenuItem"
+            android:title="Favourites"
+            android:icon="@drawable/ic_favorite_24dp"/>
+
+        <item
+            android:id="@+id/MainMenu_LogoutMenuItem"
+            android:title="Logout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"/>
+
+    </group>
+
+
+</menu>

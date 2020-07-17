@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <include
+        android:id="@+id/NewProjectPage_toolBar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/NewProjectPage_toolBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/NewProjectPage_ProjectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Project Name"/>
+
+            <EditText
+                android:id="@+id/NewProjectPage_ProblemStatement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NewProjectPage_ProjectName"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Problem Statement"/>
+
+            <EditText
+                android:id="@+id/NewProjectPage_ProposedSolution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:layout_below="@id/NewProjectPage_ProblemStatement"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Proposed Solution"/>
+
+            <EditText
+                android:id="@+id/NewProjectPage_References"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:layout_below="@id/NewProjectPage_ProposedSolution"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="References"/>
+
+            <EditText
+                android:id="@+id/NewProjectPage_Mentor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_below="@id/NewProjectPage_References"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Mentor(if any)"/>
+
+
+            <Button
+                android:id="@+id/NewProjectPage_submitProject"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NewProjectPage_Mentor"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/blue_border"
+                android:textColor="#fff"
+                android:layout_centerHorizontal="true"
+                android:text="Commit Changes"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

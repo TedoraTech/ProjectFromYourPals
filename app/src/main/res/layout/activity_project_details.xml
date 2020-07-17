@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectDetailsActivity">
+
+    <include layout="@layout/toolbar" android:id="@+id/ProjectDetailsPage_toolBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ProjectDetailsPage_toolBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ProjectDetailsPage_projectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/back_blue_rounded"
+                android:padding="7dp"
+                android:text="Project Name"
+                android:textColor="#fff"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/ProjectDetailsPage_yearOfSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProjectDetailsPage_projectName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:text="Year of submission"/>
+
+            <TextView
+                android:id="@+id/ProjectDetailsPage_problemStatement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProjectDetailsPage_yearOfSub"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:text="Problem Statement"/>
+
+            <TextView
+                android:id="@+id/ProjectDetailsPage_proposedSolution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProjectDetailsPage_problemStatement"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:text="Proposed solution"/>
+
+            <TextView
+                android:id="@+id/ProjectDetailsPage_references"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProjectDetailsPage_proposedSolution"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:text="References"/>
+
+            <TextView
+                android:id="@+id/ProjectDetailsPage_mentors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProjectDetailsPage_references"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:text="mentors"/>
+
+            <RelativeLayout
+                android:id="@+id/ProjectDetailsPage_videoRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProjectDetailsPage_mentors"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/ProjectDetailsPage_videoImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/icon"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/ProjectDetailsPage_videoName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ProjectDetailsPage_videoImageView"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:text="ProjectName.mp4"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ProjectDetailsPage_reportRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/ProjectDetailsPage_videoRelativeLayout">
+
+                <ImageView
+                    android:id="@+id/ProjectDetailsPage_reportImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/ProjectDetailsPage_reportText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ProjectDetailsPage_reportImageView"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:text="ProjectReport"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/projectDetailsPage_chatMenuOption"
+        android:title="chat"
+        android:icon="@drawable/ic_chat_bubble_black_24dp"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/ProjectDetailsPage_fav"
+        android:title="fav"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ProjectDetailsPage_edit"
+        android:title="edit"
+        android:icon="@drawable/ic_edit_black_24dp"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".RegisterActivity">
+
+    <include layout="@layout/toolbar" android:id="@+id/RegisterPage_toolBar"/>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/RegisterPage_toolBar">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <ImageView
+              android:id="@+id/registerPage_ImageView"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:src="@drawable/icon"/>
+
+          <EditText
+              android:id="@+id/RegisterPage_username"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/registerPage_ImageView"
+              android:inputType="text"
+              android:layout_marginTop="15dp"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              android:hint="Username"/>
+
+          <EditText
+              android:id="@+id/RegisterPage_emailID"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/RegisterPage_username"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              android:inputType="textEmailAddress"
+              android:hint="Email-ID"/>
+
+          <EditText
+              android:id="@+id/RegisterPage_dateOfJoining"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/RegisterPage_emailID"
+              android:inputType="number"
+              android:maxLength="4"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              android:hint="joining year"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Role : "
+              android:layout_below="@id/RegisterPage_dateOfJoining"
+              android:layout_marginLeft="30dp"
+              android:layout_marginTop="10dp"
+              android:textColor="#000"
+              android:textSize="15dp"/>
+
+          <RadioGroup
+              android:id="@+id/RoleGroup"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:orientation="horizontal"
+              android:layout_gravity="center_horizontal"
+              android:gravity="center_horizontal"
+              android:layout_below="@id/RegisterPage_dateOfJoining">
+              <RadioButton
+                  android:id="@+id/Teacher"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:tag="Teacher"
+                  android:text="Teacher"
+                  android:buttonTint="@color/colorPrimary"/>
+              <RadioButton
+                  android:id="@+id/Student"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:tag="Student"
+                  android:text="Student"
+                  android:layout_marginLeft="20dp"
+                  android:buttonTint="@color/colorPrimary"/>
+          </RadioGroup>
+
+          <EditText
+              android:id="@+id/RegisterPage_USN"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/RoleGroup"
+              android:inputType="textEmailAddress"
+              android:maxLength="10"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              android:hint="USN"/>
+
+          <EditText
+              android:id="@+id/RegisterPage_collegeName"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/RegisterPage_USN"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              android:inputType="text"
+              android:maxLines="2"
+              android:maxLength="100"
+              android:hint="College Name"/>
+
+          <EditText
+              android:id="@+id/RegisterPage_password"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/RegisterPage_collegeName"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              android:inputType="textPassword"
+              android:hint="Password"/>
+
+          <EditText
+              android:id="@+id/RegisterPage_repeatPassword"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/RegisterPage_password"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              android:inputType="textPassword"
+              android:hint="Repeat Password" />
+
+          <Button
+              android:id="@+id/RegisterPage_registerButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/RegisterPage_repeatPassword"
+              android:layout_marginTop="15dp"
+              android:background="@drawable/blue_border"
+              android:textColor="#fff"
+              android:layout_centerHorizontal="true"
+              android:text="Register"/>
+
+          <Button
+              android:id="@+id/RegisterPage_loginButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/RegisterPage_registerButton"
+              android:layout_marginTop="15dp"
+              android:background="@drawable/blue_border"
+              android:textColor="#fff"
+              android:layout_centerHorizontal="true"
+              android:text="login"/>
+
+      </RelativeLayout>
+
+
+   </ScrollView>
+</RelativeLayout>

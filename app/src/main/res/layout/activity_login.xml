@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".LoginActivity">
+
+    <include layout="@layout/toolbar" android:id="@+id/LoginPage_toolBar" />
+
+    <ImageView
+        android:id="@+id/LoginPage_ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/LoginPage_toolBar"
+        android:src="@drawable/icon"/>
+
+    <EditText
+        android:id="@+id/LoginPage_emailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LoginPage_ImageView"
+        android:layout_marginTop="15dp"
+        android:hint="Email-ID"/>
+
+    <EditText
+        android:id="@+id/LoginPage_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LoginPage_emailID"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/Loginpage_loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_border"
+        android:textColor="#fff"
+        android:layout_below="@id/LoginPage_password"
+        android:layout_marginTop="15dp"
+        android:text="Login"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/LoginPage_registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Loginpage_loginButton"
+        android:background="@drawable/blue_border"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:text="Register"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

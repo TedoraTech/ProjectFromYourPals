@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "896786204683",
+    "firebase_url": "https://collegeproject-e3008.firebaseio.com",
+    "project_id": "collegeproject-e3008",
+    "storage_bucket": "collegeproject-e3008.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896786204683:android:851efce66d8bd450",
+        "android_client_info": {
+          "package_name": "com.niit.shreyasgs.collegeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896786204683-9fvtr5rmupsq142396m3coso6bkhqpv3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.niit.shreyasgs.collegeproject",
+            "certificate_hash": "19f73dff0257f72074c716d06df17e9cba00ee5e"
+          }
+        },
+        {
+          "client_id": "896786204683-jarid6i390cjfg9o80dcf3nu5nnennvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNMqQtkJBtnektL-A0nI8aOAU0K1yyjaY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896786204683-jarid6i390cjfg9o80dcf3nu5nnennvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
